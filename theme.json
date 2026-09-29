@@ -1,0 +1,22 @@
+{
+  "id": "zen-tidy",
+  "name": "Zen Tidy",
+  "description": "Arc-style Tidy for Zen: one click groups your unpinned tabs into named folders. Works offline, with undo. Optional AI (Claude, OpenAI-compatible or local Ollama).",
+  "homepage": "https://github.com/hajorda/ZenTidy",
+  "readme": "https://raw.githubusercontent.com/hajorda/ZenTidy/main/README.md",
+  "image": "https://raw.githubusercontent.com/hajorda/ZenTidy/main/assets/logo.png",
+  "author": "hajorda",
+  "version": "0.1.0",
+  "style": {
+    "chrome": "mod/userChrome.css"
+  },
+  "preferences": "mod/preferences.json",
+  "scripts": {
+    "mod/core.uc.js": { "include": ["chrome://browser/content/browser.xhtml"], "loadOrder": 10 },
+    "mod/ai.uc.js": { "include": ["chrome://browser/content/browser.xhtml"], "loadOrder": 11 },
+    "mod/zen-adapter.uc.js": { "include": ["chrome://browser/content/browser.xhtml"], "loadOrder": 12 },
+    "mod/tidy.uc.js": { "include": ["chrome://browser/content/browser.xhtml"], "loadOrder": 13 }
+  },
+  "tags": ["Tabs", "Folders", "Productivity", "AI"],
+  "fork": ["zen"]
+}

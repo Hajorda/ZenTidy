@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Zen Tidy logo">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#065F46"/>
+      <stop offset="1" stop-color="#10B981"/>
+    </linearGradient>
+    <linearGradient id="front" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFD66B"/>
+      <stop offset="1" stop-color="#FFC53D"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="30" fill="url(#bg)"/>
+  <!-- back folder, slightly offset: tabs neatly stacked -->
+  <path d="M30 38a8 8 0 0 1 8-8h16a5 5 0 0 1 3.6 1.5L62 36h26a8 8 0 0 1 8 8v4H30z" fill="#E9A92F" opacity="0.85"/>
+  <!-- front folder -->
+  <path d="M24 50a9 9 0 0 1 9-9h18.5a6 6 0 0 1 4.3 1.8L61 48h34a9 9 0 0 1 9 9v5H24z" fill="#F5B83D"/>
+  <rect x="24" y="58" width="80" height="44" rx="9" fill="url(#front)"/>
+  <!-- tidy lines -->
+  <rect x="38" y="72" width="40" height="5" rx="2.5" fill="#8A5A00" opacity="0.55"/>
+  <rect x="38" y="83" width="28" height="5" rx="2.5" fill="#8A5A00" opacity="0.35"/>
+  <!-- sparkles -->
+  <path d="M96 14l3.6 10.4L110 28l-10.4 3.6L96 42l-3.6-10.4L82 28l10.4-3.6z" fill="#FFFFFF"/>
+  <path d="M112 44l1.8 5.2L119 51l-5.2 1.8L112 58l-1.8-5.2L105 51l5.2-1.8z" fill="#FFFFFF" opacity="0.8"/>
+</svg>

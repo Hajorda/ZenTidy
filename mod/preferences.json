@@ -1,0 +1,93 @@
+[
+  { "type": "separator", "label": "Grouping" },
+  {
+    "property": "zen.tidy.min-group-size",
+    "type": "dropdown",
+    "label": "Smallest folder",
+    "defaultValue": 2,
+    "placeholder": false,
+    "options": [
+      { "label": "2 tabs", "value": 2 },
+      { "label": "3 tabs", "value": 3 },
+      { "label": "4 tabs", "value": 4 }
+    ]
+  },
+  {
+    "property": "zen.tidy.max-folders",
+    "type": "dropdown",
+    "label": "Most folders per tidy",
+    "defaultValue": 6,
+    "placeholder": false,
+    "options": [
+      { "label": "3", "value": 3 },
+      { "label": "4", "value": 4 },
+      { "label": "6", "value": 6 },
+      { "label": "8", "value": 8 },
+      { "label": "10", "value": 10 }
+    ]
+  },
+  {
+    "property": "zen.tidy.merge-existing",
+    "type": "checkbox",
+    "label": "Add tabs to a matching folder I already have instead of making a new one",
+    "defaultValue": false
+  },
+  {
+    "property": "zen.tidy.close-duplicates",
+    "type": "checkbox",
+    "label": "Close duplicate tabs while tidying (undo reopens them)",
+    "defaultValue": false
+  },
+  {
+    "property": "zen.tidy.shortcut",
+    "type": "string",
+    "label": "Keyboard shortcut (e.g. accel+alt+Y; accel = Ctrl, or Cmd on macOS)",
+    "placeholder": "accel+alt+Y"
+  },
+  { "type": "separator", "label": "AI (optional)" },
+  {
+    "property": "zen.tidy.ai-provider",
+    "type": "dropdown",
+    "label": "Group with AI",
+    "defaultValue": "none",
+    "placeholder": false,
+    "options": [
+      { "label": "Off (local grouping)", "value": "none" },
+      { "label": "Claude (Anthropic API key)", "value": "anthropic" },
+      { "label": "OpenAI-compatible API", "value": "openai" },
+      { "label": "Ollama on this computer", "value": "ollama" }
+    ]
+  },
+  {
+    "property": "zen.tidy.ai-model",
+    "type": "string",
+    "label": "Model (empty = claude-opus-5-5 for Claude, llama3.2 for Ollama; required for OpenAI-compatible)",
+    "placeholder": "default"
+  },
+  {
+    "property": "zen.tidy.ai-base-url",
+    "type": "string",
+    "label": "API address (only for OpenAI-compatible servers or a non-default Ollama)",
+    "placeholder": "default"
+  },
+  { "type": "separator", "label": "Auto-tidy" },
+  {
+    "property": "zen.tidy.auto",
+    "type": "checkbox",
+    "label": "Tidy automatically when unpinned tabs pile up",
+    "defaultValue": false
+  },
+  {
+    "property": "zen.tidy.auto-threshold",
+    "type": "dropdown",
+    "label": "…when there are at least",
+    "defaultValue": 15,
+    "placeholder": false,
+    "options": [
+      { "label": "10 tabs", "value": 10 },
+      { "label": "15 tabs", "value": 15 },
+      { "label": "20 tabs", "value": 20 },
+      { "label": "30 tabs", "value": 30 }
+    ]
+  }
+]
